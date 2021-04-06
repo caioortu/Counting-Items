@@ -1,0 +1,12 @@
+/* 
+  AddCounter.strings
+  Counters
+
+  Created by Caio Ortu on 4/5/21.
+  
+*/
+
+"ADD_COUNTER_TITLE" = "Create a counter";
+"ADD_COUNTER_TEXTFIELD_PLACEHOLDER" = "Cups of coffee";
+"CONNECTIVITY_ERROR_TITLE" = "Couldn’t create the counter";
+"ADD_COUNTER_DISMISS" = "Dismiss";

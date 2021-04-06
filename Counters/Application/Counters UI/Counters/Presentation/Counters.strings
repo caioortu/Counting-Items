@@ -1,0 +1,19 @@
+/* 
+  Counters.strings
+  Counters
+
+  Created by Caio Ortu on 4/2/21.
+  
+*/
+
+"COUNTERS_TITLE" = "Counters";
+"CONNECTIVITY_ERROR_TITLE" = "Couldn’t load the counters";
+"EMPTY_RESULT_ERROR_TITLE" = "No counters yet";
+"CONNECTIVITY_ERROR_BUTTON_TITLE" = "Retry";
+"EMPTY_RESULT_ERROR_BUTTON_TITLE" = "Create a counter";
+"COUNTERS_BAR_TITLE" = "%d · Counted %d times";
+"COUNTER_OPERATION_ERROR_TITLE" = "Couldn’t update the “%@” counter to %d";
+"COUNTER_RETRY" = "Retry";
+"COUNTER_DISMISS" = "Dismiss";
+"COUNTER_CREATE" = "Create a counter";
+"COUNTER_SEARCH_NO_RESULT" = "No Reusult";

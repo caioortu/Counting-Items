@@ -1,0 +1,1387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0027F7F5261B5E8400F55430 /* UIBarButtonItem+TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F7F4261B5E8400F55430 /* UIBarButtonItem+TestHelper.swift */; };
+		0027F7FA261B610100F55430 /* UIButton+TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F7F9261B610100F55430 /* UIButton+TestHelper.swift */; };
+		0027F7FE261B62F100F55430 /* CountersViewController+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB0526168798005EC90D /* CountersViewController+TestHelpers.swift */; };
+		0027F802261B63C000F55430 /* UIRefreshControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FAFF26168666005EC90D /* UIRefreshControl+TestHelpers.swift */; };
+		0027F806261B63CB00F55430 /* UIBarButtonItem+TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F7F4261B5E8400F55430 /* UIBarButtonItem+TestHelper.swift */; };
+		0027F80A261B63CE00F55430 /* UIButton+TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F7F9261B610100F55430 /* UIButton+TestHelper.swift */; };
+		0027F812261B8FB500F55430 /* CountersBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F811261B8FB500F55430 /* CountersBarController.swift */; };
+		0027F81F261BAAE600F55430 /* CounterDeleter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F81E261BAAE600F55430 /* CounterDeleter.swift */; };
+		0027F824261BAB9800F55430 /* RemoteCounterDeleter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F823261BAB9800F55430 /* RemoteCounterDeleter.swift */; };
+		0027F82C261BAC0400F55430 /* DeleteCountersFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F82B261BAC0400F55430 /* DeleteCountersFromRemoteUseCaseTests.swift */; };
+		003ABBA02613C1990008321F /* ManagedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003ABB9F2613C1990008321F /* ManagedCache.swift */; };
+		003ABBA62613C27E0008321F /* ManagedCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003ABBA52613C27E0008321F /* ManagedCounter.swift */; };
+		003ABBB02613C5020008321F /* CoreDataCounterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003ABBAF2613C5020008321F /* CoreDataCounterStore.swift */; };
+		003ABBB62613C6540008321F /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003ABBB52613C6540008321F /* CoreDataHelpers.swift */; };
+		003ABBBB2613C7080008321F /* CounterStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003ABBBA2613C7080008321F /* CounterStoreSpecs.swift */; };
+		003ABBC12613C7C70008321F /* XCTestCase+CounterStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003ABBC02613C7C70008321F /* XCTestCase+CounterStoreSpecs.swift */; };
+		003ABBC52613D1360008321F /* CoreDataCounterStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003ABBC42613D1360008321F /* CoreDataCounterStoreTests.swift */; };
+		003CFBDE261ABD2C0081C391 /* AddCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003CFBDD261ABD2C0081C391 /* AddCounterViewController.swift */; };
+		003CFBE2261ABD470081C391 /* AddCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003CFBE1261ABD470081C391 /* AddCounterView.swift */; };
+		0052EB5826176A7200FD5D26 /* WelcomeFeatureView+TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052EB5726176A7200FD5D26 /* WelcomeFeatureView+TestHelper.swift */; };
+		0052EB5C26177E8F00FD5D26 /* UserDefaults+Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052EB5B26177E8F00FD5D26 /* UserDefaults+Welcome.swift */; };
+		0052EB792617ABF300FD5D26 /* CountersPresenter+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052EB782617ABF300FD5D26 /* CountersPresenter+Localized.swift */; };
+		0052EB7D2617AC7400FD5D26 /* Counters.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0052EB7C2617AC7400FD5D26 /* Counters.strings */; };
+		0052EB812617AE7100FD5D26 /* CountersUIIntegrationTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052EB802617AE7100FD5D26 /* CountersUIIntegrationTests+Localization.swift */; };
+		0052EB872617AEEA00FD5D26 /* Localization+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052EB862617AEEA00FD5D26 /* Localization+TestHelpers.swift */; };
+		0052EB8D2617B3BB00FD5D26 /* UIColor+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052EB8C2617B3BB00FD5D26 /* UIColor+Defaults.swift */; };
+		0052EB912617CC1600FD5D26 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0052EB902617CC1600FD5D26 /* Localizable.strings */; };
+		0052EB952617CD5A00FD5D26 /* CountersMapperError+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052EB942617CD5A00FD5D26 /* CountersMapperError+Localized.swift */; };
+		0052EB992617CDF400FD5D26 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052EB982617CDF400FD5D26 /* ErrorView.swift */; };
+		006F5C2F2613E9D300A5E00A /* CounterCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006F5C2E2613E9D300A5E00A /* CounterCreator.swift */; };
+		0082F6A026165816006C0323 /* CountersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0082F69F26165816006C0323 /* CountersViewController.swift */; };
+		0082F6AB261659B8006C0323 /* CountersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0082F6AA261659B8006C0323 /* CountersPresenter.swift */; };
+		0082F6CE2616719A006C0323 /* CountersRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0082F6CD2616719A006C0323 /* CountersRefreshViewController.swift */; };
+		0082F6D42616735F006C0323 /* CounterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0082F6D32616735F006C0323 /* CounterCell.swift */; };
+		0082F6E426167625006C0323 /* CounterCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0082F6E326167624006C0323 /* CounterCellController.swift */; };
+		0082F6EE26167C3C006C0323 /* CounterCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0082F6ED26167C3C006C0323 /* CounterCellPresenter.swift */; };
+		0082F6FC26168162006C0323 /* CountersUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0082F6FB26168162006C0323 /* CountersUIComposer.swift */; };
+		00B3C5F6261BCE9C00F5F7EE /* CountersSearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3C5F5261BCE9C00F5F7EE /* CountersSearchResultsController.swift */; };
+		00B3C5FB261BE03200F5F7EE /* CounterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3C5FA261BE03200F5F7EE /* CounterListViewController.swift */; };
+		00B3C615261C813800F5F7EE /* CountersSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3C614261C813800F5F7EE /* CountersSearchController.swift */; };
+		00B3C61D261C86FF00F5F7EE /* CountersSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3C61C261C86FF00F5F7EE /* CountersSearchPresenter.swift */; };
+		00C0BC7226188D59003876D5 /* Cell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C0BC7026188D59003876D5 /* Cell+Extension.swift */; };
+		00C0BC7326188D59003876D5 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C0BC7126188D59003876D5 /* NSObject+Extension.swift */; };
+		00C174C52618C29E00D9D0D6 /* Counters.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 00C174C42618C29E00D9D0D6 /* Counters.stringsdict */; };
+		00DB6AD4261ACE3B00B96952 /* AddCounterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB6AD3261ACE3B00B96952 /* AddCounterPresenter.swift */; };
+		00DB6ADA261ACF6300B96952 /* AddCounterPresenter+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB6AD9261ACF6300B96952 /* AddCounterPresenter+Localized.swift */; };
+		00DB6ADE261ACF8500B96952 /* AddCounter.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00DB6ADD261ACF8500B96952 /* AddCounter.strings */; };
+		00DB6AE3261AD22D00B96952 /* AddCounterUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB6AE2261AD22D00B96952 /* AddCounterUIComposer.swift */; };
+		00DB6AEE261AD7B400B96952 /* CounterLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB6AED261AD7B400B96952 /* CounterLoadingView.swift */; };
+		00DB6AF4261AD7E200B96952 /* CountersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB6AF3261AD7E200B96952 /* CountersView.swift */; };
+		00DB6AFA261AD7FC00B96952 /* CounterErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB6AF9261AD7FC00B96952 /* CounterErrorView.swift */; };
+		00DB6B14261ADF1B00B96952 /* WelcomeAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052EB6926178A8800FD5D26 /* WelcomeAcceptanceTests.swift */; };
+		00DB6B1E261ADF2000B96952 /* CountersAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052EB5F2617804000FD5D26 /* CountersAcceptanceTests.swift */; };
+		00DB6B23261ADF4800B96952 /* TestUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052EB6E26178B6900FD5D26 /* TestUserDefaults.swift */; };
+		00DB6B2D261ADF6A00B96952 /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052EB63261781B500FD5D26 /* HTTPClientStub.swift */; };
+		00DE1D00261642AB00BBBD94 /* RemoteCounterCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DE1CFF261642AB00BBBD94 /* RemoteCounterCreator.swift */; };
+		00DE1D062616459B00BBBD94 /* CountersResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DE1D052616459B00BBBD94 /* CountersResult.swift */; };
+		00DE1D0C261648D700BBBD94 /* CreateCountersFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DE1D0B261648D700BBBD94 /* CreateCountersFromRemoteUseCaseTests.swift */; };
+		00DE1D1326164B5400BBBD94 /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DE1D1226164B5400BBBD94 /* HTTPClientSpy.swift */; };
+		00DE1D1926164BDD00BBBD94 /* RemoteCounterTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DE1D1826164BDD00BBBD94 /* RemoteCounterTestHelpers.swift */; };
+		00DE1D2726164E8E00BBBD94 /* CounterOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DE1D2626164E8E00BBBD94 /* CounterOperator.swift */; };
+		00DE1D472616537800BBBD94 /* RemoteCounterOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DE1D462616537800BBBD94 /* RemoteCounterOperator.swift */; };
+		00DE1D4D261653F900BBBD94 /* OperateCountersFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DE1D4C261653F900BBBD94 /* OperateCountersFromRemoteUseCaseTests.swift */; };
+		00E0FAF52616840F005EC90D /* CountersUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FAF42616840F005EC90D /* CountersUIIntegrationTests.swift */; };
+		00E0FAFA2616848B005EC90D /* CountersUIIntegrationTests+LoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FAF92616848B005EC90D /* CountersUIIntegrationTests+LoaderSpy.swift */; };
+		00E0FB0026168666005EC90D /* UIRefreshControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FAFF26168666005EC90D /* UIRefreshControl+TestHelpers.swift */; };
+		00E0FB0626168798005EC90D /* CountersViewController+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB0526168798005EC90D /* CountersViewController+TestHelpers.swift */; };
+		00E0FB0C261689F2005EC90D /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB0B261689F2005EC90D /* WeakRefVirtualProxy.swift */; };
+		00E0FB1026168B0E005EC90D /* CountersUIIntegrationTests+Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB0F26168B0E005EC90D /* CountersUIIntegrationTests+Assertions.swift */; };
+		00E0FB1A26168C4B005EC90D /* CounterCelll+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB1926168C4B005EC90D /* CounterCelll+TestHelpers.swift */; };
+		00E0FB2226168EC7005EC90D /* CountersViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB2126168EC7005EC90D /* CountersViewAdapter.swift */; };
+		00E0FB2A26169298005EC90D /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB2926169298005EC90D /* MainQueueDispatchDecorator.swift */; };
+		00E0FB2E261693A4005EC90D /* CounterLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB2D261693A4005EC90D /* CounterLoadingViewModel.swift */; };
+		00E0FB322616941B005EC90D /* CountersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB312616941B005EC90D /* CountersViewModel.swift */; };
+		00E0FB3626169434005EC90D /* CounterErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB3526169434005EC90D /* CounterErrorViewModel.swift */; };
+		00E0FB4A26169776005EC90D /* WelcomeUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB4926169776005EC90D /* WelcomeUIComposer.swift */; };
+		00E0FB5026175B26005EC90D /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB4F26175B26005EC90D /* String+Localizable.swift */; };
+		00E0FB5726175C4E005EC90D /* Welcome.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00E0FB5926175C4E005EC90D /* Welcome.strings */; };
+		00E0FB5F26175E67005EC90D /* WelcomeUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB5E26175E67005EC90D /* WelcomeUIIntegrationTests.swift */; };
+		00E0FB72261760EF005EC90D /* WelcomeViewController+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB71261760EF005EC90D /* WelcomeViewController+TestHelpers.swift */; };
+		00E0FB7A261762C1005EC90D /* WelcomeUIIntegrationTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0FB79261762C1005EC90D /* WelcomeUIIntegrationTests+Localization.swift */; };
+		00E7B40B2612A15300119CCA /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B40A2612A15300119CCA /* Counter.swift */; };
+		00E7B4132612A1A600119CCA /* CounterLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B4122612A1A600119CCA /* CounterLoader.swift */; };
+		00E7B4192612A21800119CCA /* LoadCountersFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B4182612A21800119CCA /* LoadCountersFromRemoteUseCaseTests.swift */; };
+		00E7B43526135DB400119CCA /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B43426135DB400119CCA /* HTTPClient.swift */; };
+		00E7B43926135E0100119CCA /* RemoteCounterLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B43826135E0100119CCA /* RemoteCounterLoader.swift */; };
+		00E7B44026135FE500119CCA /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B43F26135FE500119CCA /* XCTestCase+MemoryLeakTracking.swift */; };
+		00E7B446261360C700119CCA /* Networking+HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B445261360C700119CCA /* Networking+HTTPClient.swift */; };
+		00E7B44A26136DB500119CCA /* NetworkingHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B44926136DB500119CCA /* NetworkingHTTPClientTests.swift */; };
+		00E7B44E26136E9700119CCA /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B44D26136E9700119CCA /* SharedTestHelpers.swift */; };
+		00E7B45426137C0500119CCA /* CountersMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B45326137C0500119CCA /* CountersMapper.swift */; };
+		00E7B45826137C7400119CCA /* RemoteCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B45726137C7400119CCA /* RemoteCounter.swift */; };
+		00E7B4612613A38300119CCA /* CounterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B4602613A38300119CCA /* CounterStore.swift */; };
+		00E7B4672613A3D900119CCA /* LocalCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B4662613A3D900119CCA /* LocalCounter.swift */; };
+		00E7B46B2613A57100119CCA /* CounterCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B46A2613A57100119CCA /* CounterCachePolicy.swift */; };
+		00E7B46F2613A6C700119CCA /* LocalCounterLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B46E2613A6C700119CCA /* LocalCounterLoader.swift */; };
+		00E7B4732613AB6D00119CCA /* CounterCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B4722613AB6C00119CCA /* CounterCache.swift */; };
+		00E7B4792613AD3300119CCA /* CacheCountersUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B4782613AD3300119CCA /* CacheCountersUseCaseTests.swift */; };
+		00E7B47D2613B3EF00119CCA /* LoadCountersFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B47C2613B3EF00119CCA /* LoadCountersFromCacheUseCaseTests.swift */; };
+		00E7B4822613B43A00119CCA /* CounterStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B4812613B43A00119CCA /* CounterStoreSpy.swift */; };
+		00E7B4882613B80600119CCA /* CounterCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B4872613B80600119CCA /* CounterCacheTestHelpers.swift */; };
+		00E7B4932613BE7A00119CCA /* CounterStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00E7B4912613BE7A00119CCA /* CounterStore.xcdatamodeld */; };
+		350AF6D925E02D5E0000F698 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350AF6D825E02D5E0000F698 /* WelcomeView.swift */; };
+		350AF6E425E035840000F698 /* WelcomeFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350AF6E325E035840000F698 /* WelcomeFeatureView.swift */; };
+		350AF6ED25E0365A0000F698 /* UIImage+Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350AF6EC25E0365A0000F698 /* UIImage+Badge.swift */; };
+		35868D2825E03F090028AF1D /* WelcomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35868D2725E03F090028AF1D /* WelcomeViewPresenter.swift */; };
+		35EAFB7925CC9E3B00DCFE10 /* Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EAFB7825CC9E3B00DCFE10 /* Networking.m */; };
+		DE3EBACC25E048CE00DA1E0D /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3EBACB25E048CE00DA1E0D /* Button.swift */; };
+		DECA256C25CC8D4200851431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA256B25CC8D4200851431 /* AppDelegate.swift */; };
+		DECA257025CC8D4200851431 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA256F25CC8D4200851431 /* WelcomeViewController.swift */; };
+		DECA257525CC8D4300851431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECA257425CC8D4300851431 /* Assets.xcassets */; };
+		DECA257825CC8D4300851431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECA257625CC8D4300851431 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00DB6B06261ADEBF00B96952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DECA256025CC8D4200851431 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DECA256725CC8D4200851431;
+			remoteInfo = Counters;
+		};
+		DECA257F25CC8D4300851431 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DECA256025CC8D4200851431 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DECA256725CC8D4200851431;
+			remoteInfo = Counters;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0027F7F4261B5E8400F55430 /* UIBarButtonItem+TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+TestHelper.swift"; sourceTree = "<group>"; };
+		0027F7F9261B610100F55430 /* UIButton+TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+TestHelper.swift"; sourceTree = "<group>"; };
+		0027F811261B8FB500F55430 /* CountersBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersBarController.swift; sourceTree = "<group>"; };
+		0027F81E261BAAE600F55430 /* CounterDeleter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterDeleter.swift; sourceTree = "<group>"; };
+		0027F823261BAB9800F55430 /* RemoteCounterDeleter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCounterDeleter.swift; sourceTree = "<group>"; };
+		0027F82B261BAC0400F55430 /* DeleteCountersFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCountersFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
+		003ABB9F2613C1990008321F /* ManagedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedCache.swift; sourceTree = "<group>"; };
+		003ABBA52613C27E0008321F /* ManagedCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedCounter.swift; sourceTree = "<group>"; };
+		003ABBAF2613C5020008321F /* CoreDataCounterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataCounterStore.swift; sourceTree = "<group>"; };
+		003ABBB52613C6540008321F /* CoreDataHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
+		003ABBBA2613C7080008321F /* CounterStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterStoreSpecs.swift; sourceTree = "<group>"; };
+		003ABBC02613C7C70008321F /* XCTestCase+CounterStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+CounterStoreSpecs.swift"; sourceTree = "<group>"; };
+		003ABBC42613D1360008321F /* CoreDataCounterStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataCounterStoreTests.swift; sourceTree = "<group>"; };
+		003CFBDD261ABD2C0081C391 /* AddCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterViewController.swift; sourceTree = "<group>"; };
+		003CFBE1261ABD470081C391 /* AddCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterView.swift; sourceTree = "<group>"; };
+		0052EB5726176A7200FD5D26 /* WelcomeFeatureView+TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeFeatureView+TestHelper.swift"; sourceTree = "<group>"; };
+		0052EB5B26177E8F00FD5D26 /* UserDefaults+Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Welcome.swift"; sourceTree = "<group>"; };
+		0052EB5F2617804000FD5D26 /* CountersAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersAcceptanceTests.swift; sourceTree = "<group>"; };
+		0052EB63261781B500FD5D26 /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
+		0052EB6926178A8800FD5D26 /* WelcomeAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeAcceptanceTests.swift; sourceTree = "<group>"; };
+		0052EB6E26178B6900FD5D26 /* TestUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUserDefaults.swift; sourceTree = "<group>"; };
+		0052EB782617ABF300FD5D26 /* CountersPresenter+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountersPresenter+Localized.swift"; sourceTree = "<group>"; };
+		0052EB7C2617AC7400FD5D26 /* Counters.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Counters.strings; sourceTree = "<group>"; };
+		0052EB802617AE7100FD5D26 /* CountersUIIntegrationTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountersUIIntegrationTests+Localization.swift"; sourceTree = "<group>"; };
+		0052EB862617AEEA00FD5D26 /* Localization+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Localization+TestHelpers.swift"; sourceTree = "<group>"; };
+		0052EB8C2617B3BB00FD5D26 /* UIColor+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Defaults.swift"; sourceTree = "<group>"; };
+		0052EB902617CC1600FD5D26 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0052EB942617CD5A00FD5D26 /* CountersMapperError+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountersMapperError+Localized.swift"; sourceTree = "<group>"; };
+		0052EB982617CDF400FD5D26 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		006F5C2E2613E9D300A5E00A /* CounterCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCreator.swift; sourceTree = "<group>"; };
+		0082F69F26165816006C0323 /* CountersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersViewController.swift; sourceTree = "<group>"; };
+		0082F6AA261659B8006C0323 /* CountersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersPresenter.swift; sourceTree = "<group>"; };
+		0082F6CD2616719A006C0323 /* CountersRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersRefreshViewController.swift; sourceTree = "<group>"; };
+		0082F6D32616735F006C0323 /* CounterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCell.swift; sourceTree = "<group>"; };
+		0082F6E326167624006C0323 /* CounterCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCellController.swift; sourceTree = "<group>"; };
+		0082F6ED26167C3C006C0323 /* CounterCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCellPresenter.swift; sourceTree = "<group>"; };
+		0082F6FB26168162006C0323 /* CountersUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersUIComposer.swift; sourceTree = "<group>"; };
+		00B3C5F5261BCE9C00F5F7EE /* CountersSearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersSearchResultsController.swift; sourceTree = "<group>"; };
+		00B3C5FA261BE03200F5F7EE /* CounterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListViewController.swift; sourceTree = "<group>"; };
+		00B3C614261C813800F5F7EE /* CountersSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersSearchController.swift; sourceTree = "<group>"; };
+		00B3C61C261C86FF00F5F7EE /* CountersSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersSearchPresenter.swift; sourceTree = "<group>"; };
+		00C0BC7026188D59003876D5 /* Cell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+Extension.swift"; sourceTree = "<group>"; };
+		00C0BC7126188D59003876D5 /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		00C174C42618C29E00D9D0D6 /* Counters.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Counters.stringsdict; sourceTree = "<group>"; };
+		00DB6AD3261ACE3B00B96952 /* AddCounterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterPresenter.swift; sourceTree = "<group>"; };
+		00DB6AD9261ACF6300B96952 /* AddCounterPresenter+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddCounterPresenter+Localized.swift"; sourceTree = "<group>"; };
+		00DB6ADD261ACF8500B96952 /* AddCounter.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = AddCounter.strings; sourceTree = "<group>"; };
+		00DB6AE2261AD22D00B96952 /* AddCounterUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterUIComposer.swift; sourceTree = "<group>"; };
+		00DB6AED261AD7B400B96952 /* CounterLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterLoadingView.swift; sourceTree = "<group>"; };
+		00DB6AF3261AD7E200B96952 /* CountersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersView.swift; sourceTree = "<group>"; };
+		00DB6AF9261AD7FC00B96952 /* CounterErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterErrorView.swift; sourceTree = "<group>"; };
+		00DB6B01261ADEBF00B96952 /* CountersAcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountersAcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00DB6B05261ADEBF00B96952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00DE1CFF261642AB00BBBD94 /* RemoteCounterCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCounterCreator.swift; sourceTree = "<group>"; };
+		00DE1D052616459B00BBBD94 /* CountersResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersResult.swift; sourceTree = "<group>"; };
+		00DE1D0B261648D700BBBD94 /* CreateCountersFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCountersFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
+		00DE1D1226164B5400BBBD94 /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
+		00DE1D1826164BDD00BBBD94 /* RemoteCounterTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCounterTestHelpers.swift; sourceTree = "<group>"; };
+		00DE1D2626164E8E00BBBD94 /* CounterOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterOperator.swift; sourceTree = "<group>"; };
+		00DE1D462616537800BBBD94 /* RemoteCounterOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCounterOperator.swift; sourceTree = "<group>"; };
+		00DE1D4C261653F900BBBD94 /* OperateCountersFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperateCountersFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
+		00E0FAF42616840F005EC90D /* CountersUIIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountersUIIntegrationTests.swift; sourceTree = "<group>"; };
+		00E0FAF92616848B005EC90D /* CountersUIIntegrationTests+LoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountersUIIntegrationTests+LoaderSpy.swift"; sourceTree = "<group>"; };
+		00E0FAFF26168666005EC90D /* UIRefreshControl+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+TestHelpers.swift"; sourceTree = "<group>"; };
+		00E0FB0526168798005EC90D /* CountersViewController+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountersViewController+TestHelpers.swift"; sourceTree = "<group>"; };
+		00E0FB0B261689F2005EC90D /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
+		00E0FB0F26168B0E005EC90D /* CountersUIIntegrationTests+Assertions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CountersUIIntegrationTests+Assertions.swift"; sourceTree = "<group>"; };
+		00E0FB1926168C4B005EC90D /* CounterCelll+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CounterCelll+TestHelpers.swift"; sourceTree = "<group>"; };
+		00E0FB2126168EC7005EC90D /* CountersViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersViewAdapter.swift; sourceTree = "<group>"; };
+		00E0FB2926169298005EC90D /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
+		00E0FB2D261693A4005EC90D /* CounterLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterLoadingViewModel.swift; sourceTree = "<group>"; };
+		00E0FB312616941B005EC90D /* CountersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersViewModel.swift; sourceTree = "<group>"; };
+		00E0FB3526169434005EC90D /* CounterErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterErrorViewModel.swift; sourceTree = "<group>"; };
+		00E0FB4926169776005EC90D /* WelcomeUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeUIComposer.swift; sourceTree = "<group>"; };
+		00E0FB4F26175B26005EC90D /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		00E0FB5826175C4E005EC90D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Welcome.strings; sourceTree = "<group>"; };
+		00E0FB5E26175E67005EC90D /* WelcomeUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeUIIntegrationTests.swift; sourceTree = "<group>"; };
+		00E0FB71261760EF005EC90D /* WelcomeViewController+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeViewController+TestHelpers.swift"; sourceTree = "<group>"; };
+		00E0FB79261762C1005EC90D /* WelcomeUIIntegrationTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeUIIntegrationTests+Localization.swift"; sourceTree = "<group>"; };
+		00E7B40A2612A15300119CCA /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		00E7B4122612A1A600119CCA /* CounterLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterLoader.swift; sourceTree = "<group>"; };
+		00E7B4182612A21800119CCA /* LoadCountersFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCountersFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
+		00E7B43426135DB400119CCA /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		00E7B43826135E0100119CCA /* RemoteCounterLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCounterLoader.swift; sourceTree = "<group>"; };
+		00E7B43F26135FE500119CCA /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		00E7B445261360C700119CCA /* Networking+HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Networking+HTTPClient.swift"; sourceTree = "<group>"; };
+		00E7B44926136DB500119CCA /* NetworkingHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHTTPClientTests.swift; sourceTree = "<group>"; };
+		00E7B44D26136E9700119CCA /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
+		00E7B45326137C0500119CCA /* CountersMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersMapper.swift; sourceTree = "<group>"; };
+		00E7B45726137C7400119CCA /* RemoteCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCounter.swift; sourceTree = "<group>"; };
+		00E7B4602613A38300119CCA /* CounterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterStore.swift; sourceTree = "<group>"; };
+		00E7B4662613A3D900119CCA /* LocalCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCounter.swift; sourceTree = "<group>"; };
+		00E7B46A2613A57100119CCA /* CounterCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCachePolicy.swift; sourceTree = "<group>"; };
+		00E7B46E2613A6C700119CCA /* LocalCounterLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCounterLoader.swift; sourceTree = "<group>"; };
+		00E7B4722613AB6C00119CCA /* CounterCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCache.swift; sourceTree = "<group>"; };
+		00E7B4782613AD3300119CCA /* CacheCountersUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheCountersUseCaseTests.swift; sourceTree = "<group>"; };
+		00E7B47C2613B3EF00119CCA /* LoadCountersFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCountersFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
+		00E7B4812613B43A00119CCA /* CounterStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterStoreSpy.swift; sourceTree = "<group>"; };
+		00E7B4872613B80600119CCA /* CounterCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCacheTestHelpers.swift; sourceTree = "<group>"; };
+		00E7B4922613BE7A00119CCA /* CounterStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CounterStore.xcdatamodel; sourceTree = "<group>"; };
+		350AF6D825E02D5E0000F698 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		350AF6E325E035840000F698 /* WelcomeFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFeatureView.swift; sourceTree = "<group>"; };
+		350AF6EC25E0365A0000F698 /* UIImage+Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Badge.swift"; sourceTree = "<group>"; };
+		35868D2725E03F090028AF1D /* WelcomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewPresenter.swift; sourceTree = "<group>"; };
+		35EAFB7625CC9E3A00DCFE10 /* Counters-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Counters-Bridging-Header.h"; sourceTree = "<group>"; };
+		35EAFB7725CC9E3B00DCFE10 /* Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
+		35EAFB7825CC9E3B00DCFE10 /* Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Networking.m; sourceTree = "<group>"; };
+		DE3EBACB25E048CE00DA1E0D /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		DECA256825CC8D4200851431 /* Counters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counters.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DECA256B25CC8D4200851431 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DECA256F25CC8D4200851431 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		DECA257425CC8D4300851431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DECA257725CC8D4300851431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DECA257925CC8D4300851431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DECA257E25CC8D4300851431 /* CountersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DECA258425CC8D4300851431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00DB6AFE261ADEBF00B96952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DECA256525CC8D4200851431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DECA257B25CC8D4300851431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		003ABBAC2613C49E0008321F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				003ABBAF2613C5020008321F /* CoreDataCounterStore.swift */,
+				003ABBB52613C6540008321F /* CoreDataHelpers.swift */,
+				003ABB9F2613C1990008321F /* ManagedCache.swift */,
+				003ABBA52613C27E0008321F /* ManagedCounter.swift */,
+				00E7B4912613BE7A00119CCA /* CounterStore.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		003ABBB92613C6D70008321F /* CounterStoreSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				003ABBBA2613C7080008321F /* CounterStoreSpecs.swift */,
+				003ABBC02613C7C70008321F /* XCTestCase+CounterStoreSpecs.swift */,
+			);
+			path = CounterStoreSpecs;
+			sourceTree = "<group>";
+		};
+		003CFBD8261ABABB0081C391 /* AddCounter */ = {
+			isa = PBXGroup;
+			children = (
+				00DB6AE1261AD21300B96952 /* Composers */,
+				003CFBD9261ABB1A0081C391 /* Controllers */,
+				00DB6AD2261ACE1B00B96952 /* Presentation */,
+				003CFBDA261ABB2E0081C391 /* Views */,
+			);
+			path = AddCounter;
+			sourceTree = "<group>";
+		};
+		003CFBD9261ABB1A0081C391 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				003CFBDD261ABD2C0081C391 /* AddCounterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		003CFBDA261ABB2E0081C391 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				003CFBE1261ABD470081C391 /* AddCounterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0052EB6D26178B5900FD5D26 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0052EB862617AEEA00FD5D26 /* Localization+TestHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0082F69B261657D7006C0323 /* Counters UI */ = {
+			isa = PBXGroup;
+			children = (
+				DECA25B225CC910100851431 /* Welcome */,
+				0082F69E26165809006C0323 /* Counters */,
+				003CFBD8261ABABB0081C391 /* AddCounter */,
+			);
+			path = "Counters UI";
+			sourceTree = "<group>";
+		};
+		0082F69E26165809006C0323 /* Counters */ = {
+			isa = PBXGroup;
+			children = (
+				0082F6FA2616813D006C0323 /* Composers */,
+				0082F6A52616582A006C0323 /* Controllers */,
+				0082F6A9261659A5006C0323 /* Presentation */,
+				0082F6D726167365006C0323 /* Views */,
+			);
+			path = Counters;
+			sourceTree = "<group>";
+		};
+		0082F6A52616582A006C0323 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00B3C5FA261BE03200F5F7EE /* CounterListViewController.swift */,
+				0082F69F26165816006C0323 /* CountersViewController.swift */,
+				0082F6CD2616719A006C0323 /* CountersRefreshViewController.swift */,
+				0082F6E326167624006C0323 /* CounterCellController.swift */,
+				0027F811261B8FB500F55430 /* CountersBarController.swift */,
+				00B3C614261C813800F5F7EE /* CountersSearchController.swift */,
+				00B3C5F5261BCE9C00F5F7EE /* CountersSearchResultsController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0082F6A9261659A5006C0323 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0082F6AA261659B8006C0323 /* CountersPresenter.swift */,
+				0052EB782617ABF300FD5D26 /* CountersPresenter+Localized.swift */,
+				0082F6ED26167C3C006C0323 /* CounterCellPresenter.swift */,
+				00B3C61C261C86FF00F5F7EE /* CountersSearchPresenter.swift */,
+				0052EB7C2617AC7400FD5D26 /* Counters.strings */,
+				00C174C42618C29E00D9D0D6 /* Counters.stringsdict */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0082F6D726167365006C0323 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0082F6D32616735F006C0323 /* CounterCell.swift */,
+				0052EB982617CDF400FD5D26 /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0082F6FA2616813D006C0323 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				0082F6FB26168162006C0323 /* CountersUIComposer.swift */,
+				00E0FB0B261689F2005EC90D /* WeakRefVirtualProxy.swift */,
+				00E0FB2126168EC7005EC90D /* CountersViewAdapter.swift */,
+				00E0FB2926169298005EC90D /* MainQueueDispatchDecorator.swift */,
+			);
+			path = Composers;
+			sourceTree = "<group>";
+		};
+		00DB6AD2261ACE1B00B96952 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				00DB6AD3261ACE3B00B96952 /* AddCounterPresenter.swift */,
+				00DB6AD9261ACF6300B96952 /* AddCounterPresenter+Localized.swift */,
+				00DB6ADD261ACF8500B96952 /* AddCounter.strings */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		00DB6AE1261AD21300B96952 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				00DB6AE2261AD22D00B96952 /* AddCounterUIComposer.swift */,
+			);
+			path = Composers;
+			sourceTree = "<group>";
+		};
+		00DB6AEC261AD77000B96952 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				00E0FB3526169434005EC90D /* CounterErrorViewModel.swift */,
+				00DB6AED261AD7B400B96952 /* CounterLoadingView.swift */,
+				00E0FB2D261693A4005EC90D /* CounterLoadingViewModel.swift */,
+				00E0FB312616941B005EC90D /* CountersViewModel.swift */,
+				00DB6AF3261AD7E200B96952 /* CountersView.swift */,
+				00DB6AF9261AD7FC00B96952 /* CounterErrorView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		00DB6B02261ADEBF00B96952 /* CountersAcceptanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				00DB6B22261ADF3300B96952 /* Helpers */,
+				0052EB6926178A8800FD5D26 /* WelcomeAcceptanceTests.swift */,
+				0052EB5F2617804000FD5D26 /* CountersAcceptanceTests.swift */,
+				00DB6B05261ADEBF00B96952 /* Info.plist */,
+			);
+			path = CountersAcceptanceTests;
+			sourceTree = "<group>";
+		};
+		00DB6B22261ADF3300B96952 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0052EB63261781B500FD5D26 /* HTTPClientStub.swift */,
+				0052EB6E26178B6900FD5D26 /* TestUserDefaults.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		00DE1D1126164B4100BBBD94 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				00DE1D1226164B5400BBBD94 /* HTTPClientSpy.swift */,
+				00DE1D1826164BDD00BBBD94 /* RemoteCounterTestHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		00E0FAF32616840F005EC90D /* Counters */ = {
+			isa = PBXGroup;
+			children = (
+				00E0FAF826168471005EC90D /* Helpers */,
+				00E0FAF42616840F005EC90D /* CountersUIIntegrationTests.swift */,
+			);
+			path = Counters;
+			sourceTree = "<group>";
+		};
+		00E0FAF826168471005EC90D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				00E0FB1926168C4B005EC90D /* CounterCelll+TestHelpers.swift */,
+				00E0FB0F26168B0E005EC90D /* CountersUIIntegrationTests+Assertions.swift */,
+				00E0FAF92616848B005EC90D /* CountersUIIntegrationTests+LoaderSpy.swift */,
+				0052EB802617AE7100FD5D26 /* CountersUIIntegrationTests+Localization.swift */,
+				00E0FB0526168798005EC90D /* CountersViewController+TestHelpers.swift */,
+				00E0FAFF26168666005EC90D /* UIRefreshControl+TestHelpers.swift */,
+				0027F7F4261B5E8400F55430 /* UIBarButtonItem+TestHelper.swift */,
+				0027F7F9261B610100F55430 /* UIButton+TestHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		00E0FB442616970F005EC90D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				35868D2725E03F090028AF1D /* WelcomeViewPresenter.swift */,
+				00E0FB5926175C4E005EC90D /* Welcome.strings */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		00E0FB452616971E005EC90D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DECA256F25CC8D4200851431 /* WelcomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		00E0FB4826169762005EC90D /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				00E0FB4926169776005EC90D /* WelcomeUIComposer.swift */,
+			);
+			path = Composers;
+			sourceTree = "<group>";
+		};
+		00E0FB6826176060005EC90D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0052EB6D26178B5900FD5D26 /* Helpers */,
+				00E0FB6D26176084005EC90D /* Welcome */,
+				00E0FAF32616840F005EC90D /* Counters */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		00E0FB6D26176084005EC90D /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				00E0FB70261760D3005EC90D /* Helpers */,
+				00E0FB5E26175E67005EC90D /* WelcomeUIIntegrationTests.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		00E0FB70261760D3005EC90D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				00E0FB79261762C1005EC90D /* WelcomeUIIntegrationTests+Localization.swift */,
+				00E0FB71261760EF005EC90D /* WelcomeViewController+TestHelpers.swift */,
+				0052EB5726176A7200FD5D26 /* WelcomeFeatureView+TestHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		00E7B4092612A13C00119CCA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00E7B40A2612A15300119CCA /* Counter.swift */,
+				00E7B4722613AB6C00119CCA /* CounterCache.swift */,
+				006F5C2E2613E9D300A5E00A /* CounterCreator.swift */,
+				0027F81E261BAAE600F55430 /* CounterDeleter.swift */,
+				00E7B4122612A1A600119CCA /* CounterLoader.swift */,
+				00DE1D2626164E8E00BBBD94 /* CounterOperator.swift */,
+				00DE1D052616459B00BBBD94 /* CountersResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00E7B4172612A1F200119CCA /* Counter API */ = {
+			isa = PBXGroup;
+			children = (
+				00DE1D0B261648D700BBBD94 /* CreateCountersFromRemoteUseCaseTests.swift */,
+				0027F82B261BAC0400F55430 /* DeleteCountersFromRemoteUseCaseTests.swift */,
+				00E7B4182612A21800119CCA /* LoadCountersFromRemoteUseCaseTests.swift */,
+				00E7B44926136DB500119CCA /* NetworkingHTTPClientTests.swift */,
+				00DE1D4C261653F900BBBD94 /* OperateCountersFromRemoteUseCaseTests.swift */,
+				00DE1D1126164B4100BBBD94 /* Helpers */,
+			);
+			path = "Counter API";
+			sourceTree = "<group>";
+		};
+		00E7B43326135D9A00119CCA /* Counter API */ = {
+			isa = PBXGroup;
+			children = (
+				00E7B45326137C0500119CCA /* CountersMapper.swift */,
+				00E7B43426135DB400119CCA /* HTTPClient.swift */,
+				00E7B45726137C7400119CCA /* RemoteCounter.swift */,
+				00DE1CFF261642AB00BBBD94 /* RemoteCounterCreator.swift */,
+				0027F823261BAB9800F55430 /* RemoteCounterDeleter.swift */,
+				00E7B43826135E0100119CCA /* RemoteCounterLoader.swift */,
+				00DE1D462616537800BBBD94 /* RemoteCounterOperator.swift */,
+			);
+			path = "Counter API";
+			sourceTree = "<group>";
+		};
+		00E7B43E26135FD300119CCA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				00E7B43F26135FE500119CCA /* XCTestCase+MemoryLeakTracking.swift */,
+				00E7B44D26136E9700119CCA /* SharedTestHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		00E7B45D2613A2AE00119CCA /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				00E7B45E2613A2D600119CCA /* Counter Cache */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		00E7B45E2613A2D600119CCA /* Counter Cache */ = {
+			isa = PBXGroup;
+			children = (
+				00E7B4602613A38300119CCA /* CounterStore.swift */,
+				00E7B4662613A3D900119CCA /* LocalCounter.swift */,
+				00E7B46E2613A6C700119CCA /* LocalCounterLoader.swift */,
+				00E7B46A2613A57100119CCA /* CounterCachePolicy.swift */,
+				00E7B4902613BE1E00119CCA /* Infrastructure */,
+			);
+			path = "Counter Cache";
+			sourceTree = "<group>";
+		};
+		00E7B45F2613A31100119CCA /* Counter Cache */ = {
+			isa = PBXGroup;
+			children = (
+				00E7B4782613AD3300119CCA /* CacheCountersUseCaseTests.swift */,
+				00E7B47C2613B3EF00119CCA /* LoadCountersFromCacheUseCaseTests.swift */,
+				003ABBC42613D1360008321F /* CoreDataCounterStoreTests.swift */,
+				003ABBB92613C6D70008321F /* CounterStoreSpecs */,
+				00E7B4802613B42700119CCA /* Helpers */,
+			);
+			path = "Counter Cache";
+			sourceTree = "<group>";
+		};
+		00E7B4802613B42700119CCA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				00E7B4812613B43A00119CCA /* CounterStoreSpy.swift */,
+				00E7B4872613B80600119CCA /* CounterCacheTestHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		00E7B4902613BE1E00119CCA /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				003ABBAC2613C49E0008321F /* CoreData */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		350AF6E225E035750000F698 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				350AF6D825E02D5E0000F698 /* WelcomeView.swift */,
+				350AF6E325E035840000F698 /* WelcomeFeatureView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		35868D2F25E0522E0028AF1D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				00C0BC7026188D59003876D5 /* Cell+Extension.swift */,
+				00C0BC7126188D59003876D5 /* NSObject+Extension.swift */,
+				350AF6EC25E0365A0000F698 /* UIImage+Badge.swift */,
+				00E0FB4F26175B26005EC90D /* String+Localizable.swift */,
+				0052EB5B26177E8F00FD5D26 /* UserDefaults+Welcome.swift */,
+				0052EB8C2617B3BB00FD5D26 /* UIColor+Defaults.swift */,
+				0052EB942617CD5A00FD5D26 /* CountersMapperError+Localized.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		35EAFB7425CC9E0800DCFE10 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				00E7B43326135D9A00119CCA /* Counter API */,
+				35EAFB7525CC9E1F00DCFE10 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		35EAFB7525CC9E1F00DCFE10 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				35EAFB7725CC9E3B00DCFE10 /* Networking.h */,
+				35EAFB7825CC9E3B00DCFE10 /* Networking.m */,
+				00E7B445261360C700119CCA /* Networking+HTTPClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DE3EBACA25E048C200DA1E0D /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				DE3EBACB25E048CE00DA1E0D /* Button.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		DECA255F25CC8D4200851431 = {
+			isa = PBXGroup;
+			children = (
+				DECA256A25CC8D4200851431 /* Counters */,
+				DECA258125CC8D4300851431 /* CountersTests */,
+				00DB6B02261ADEBF00B96952 /* CountersAcceptanceTests */,
+				DECA256925CC8D4200851431 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DECA256925CC8D4200851431 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DECA256825CC8D4200851431 /* Counters.app */,
+				DECA257E25CC8D4300851431 /* CountersTests.xctest */,
+				00DB6B01261ADEBF00B96952 /* CountersAcceptanceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DECA256A25CC8D4200851431 /* Counters */ = {
+			isa = PBXGroup;
+			children = (
+				DECA25AA25CC8FD600851431 /* Application */,
+				DECA25AC25CC900C00851431 /* Config */,
+				DECA25AB25CC900000851431 /* Resources */,
+				DE3EBACA25E048C200DA1E0D /* UIComponents */,
+			);
+			path = Counters;
+			sourceTree = "<group>";
+		};
+		DECA258125CC8D4300851431 /* CountersTests */ = {
+			isa = PBXGroup;
+			children = (
+				DECA258425CC8D4300851431 /* Info.plist */,
+				00E0FB6826176060005EC90D /* UI */,
+				00E7B4172612A1F200119CCA /* Counter API */,
+				00E7B45F2613A31100119CCA /* Counter Cache */,
+				00E7B43E26135FD300119CCA /* Helpers */,
+			);
+			path = CountersTests;
+			sourceTree = "<group>";
+		};
+		DECA25AA25CC8FD600851431 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				00DB6AEC261AD77000B96952 /* Presentation */,
+				DECA25AE25CC908800851431 /* AppDelegate */,
+				0082F69B261657D7006C0323 /* Counters UI */,
+				35868D2F25E0522E0028AF1D /* Extensions */,
+				DECA25AD25CC906700851431 /* Launch */,
+				00E7B4092612A13C00119CCA /* Models */,
+				00E7B45D2613A2AE00119CCA /* Persistence */,
+				35EAFB7425CC9E0800DCFE10 /* Services */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DECA25AB25CC900000851431 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DECA257425CC8D4300851431 /* Assets.xcassets */,
+				0052EB902617CC1600FD5D26 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DECA25AC25CC900C00851431 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				35EAFB7625CC9E3A00DCFE10 /* Counters-Bridging-Header.h */,
+				DECA257925CC8D4300851431 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		DECA25AD25CC906700851431 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				DECA257625CC8D4300851431 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		DECA25AE25CC908800851431 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DECA256B25CC8D4200851431 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DECA25B225CC910100851431 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				00E0FB4826169762005EC90D /* Composers */,
+				00E0FB452616971E005EC90D /* Controllers */,
+				00E0FB442616970F005EC90D /* Presentation */,
+				350AF6E225E035750000F698 /* Views */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00DB6B00261ADEBF00B96952 /* CountersAcceptanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00DB6B08261ADEBF00B96952 /* Build configuration list for PBXNativeTarget "CountersAcceptanceTests" */;
+			buildPhases = (
+				00DB6AFD261ADEBF00B96952 /* Sources */,
+				00DB6AFE261ADEBF00B96952 /* Frameworks */,
+				00DB6AFF261ADEBF00B96952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00DB6B07261ADEBF00B96952 /* PBXTargetDependency */,
+			);
+			name = CountersAcceptanceTests;
+			productName = CountersAcceptanceTests;
+			productReference = 00DB6B01261ADEBF00B96952 /* CountersAcceptanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DECA256725CC8D4200851431 /* Counters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DECA259225CC8D4300851431 /* Build configuration list for PBXNativeTarget "Counters" */;
+			buildPhases = (
+				DECA256425CC8D4200851431 /* Sources */,
+				DECA256525CC8D4200851431 /* Frameworks */,
+				DECA256625CC8D4200851431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Counters;
+			productName = Counters;
+			productReference = DECA256825CC8D4200851431 /* Counters.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DECA257D25CC8D4300851431 /* CountersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DECA259525CC8D4300851431 /* Build configuration list for PBXNativeTarget "CountersTests" */;
+			buildPhases = (
+				DECA257A25CC8D4300851431 /* Sources */,
+				DECA257B25CC8D4300851431 /* Frameworks */,
+				DECA257C25CC8D4300851431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DECA258025CC8D4300851431 /* PBXTargetDependency */,
+			);
+			name = CountersTests;
+			productName = CountersTests;
+			productReference = DECA257E25CC8D4300851431 /* CountersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DECA256025CC8D4200851431 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					00DB6B00261ADEBF00B96952 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = DECA256725CC8D4200851431;
+					};
+					DECA256725CC8D4200851431 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					DECA257D25CC8D4300851431 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = DECA256725CC8D4200851431;
+					};
+				};
+			};
+			buildConfigurationList = DECA256325CC8D4200851431 /* Build configuration list for PBXProject "Counters" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DECA255F25CC8D4200851431;
+			productRefGroup = DECA256925CC8D4200851431 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DECA256725CC8D4200851431 /* Counters */,
+				DECA257D25CC8D4300851431 /* CountersTests */,
+				00DB6B00261ADEBF00B96952 /* CountersAcceptanceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00DB6AFF261ADEBF00B96952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DECA256625CC8D4200851431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0052EB912617CC1600FD5D26 /* Localizable.strings in Resources */,
+				00C174C52618C29E00D9D0D6 /* Counters.stringsdict in Resources */,
+				00DB6ADE261ACF8500B96952 /* AddCounter.strings in Resources */,
+				DECA257825CC8D4300851431 /* LaunchScreen.storyboard in Resources */,
+				DECA257525CC8D4300851431 /* Assets.xcassets in Resources */,
+				00E0FB5726175C4E005EC90D /* Welcome.strings in Resources */,
+				0052EB7D2617AC7400FD5D26 /* Counters.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DECA257C25CC8D4300851431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00DB6AFD261ADEBF00B96952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0027F806261B63CB00F55430 /* UIBarButtonItem+TestHelper.swift in Sources */,
+				0027F80A261B63CE00F55430 /* UIButton+TestHelper.swift in Sources */,
+				0027F7FE261B62F100F55430 /* CountersViewController+TestHelpers.swift in Sources */,
+				0027F802261B63C000F55430 /* UIRefreshControl+TestHelpers.swift in Sources */,
+				00DB6B2D261ADF6A00B96952 /* HTTPClientStub.swift in Sources */,
+				00DB6B23261ADF4800B96952 /* TestUserDefaults.swift in Sources */,
+				00DB6B14261ADF1B00B96952 /* WelcomeAcceptanceTests.swift in Sources */,
+				00DB6B1E261ADF2000B96952 /* CountersAcceptanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DECA256425CC8D4200851431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E0FB4A26169776005EC90D /* WelcomeUIComposer.swift in Sources */,
+				0052EB8D2617B3BB00FD5D26 /* UIColor+Defaults.swift in Sources */,
+				00E0FB2226168EC7005EC90D /* CountersViewAdapter.swift in Sources */,
+				00DE1D472616537800BBBD94 /* RemoteCounterOperator.swift in Sources */,
+				003ABBA62613C27E0008321F /* ManagedCounter.swift in Sources */,
+				00E0FB322616941B005EC90D /* CountersViewModel.swift in Sources */,
+				00B3C5F6261BCE9C00F5F7EE /* CountersSearchResultsController.swift in Sources */,
+				00DB6AE3261AD22D00B96952 /* AddCounterUIComposer.swift in Sources */,
+				00E0FB0C261689F2005EC90D /* WeakRefVirtualProxy.swift in Sources */,
+				00B3C61D261C86FF00F5F7EE /* CountersSearchPresenter.swift in Sources */,
+				00C0BC7326188D59003876D5 /* NSObject+Extension.swift in Sources */,
+				35868D2825E03F090028AF1D /* WelcomeViewPresenter.swift in Sources */,
+				00E7B446261360C700119CCA /* Networking+HTTPClient.swift in Sources */,
+				0082F6FC26168162006C0323 /* CountersUIComposer.swift in Sources */,
+				003ABBA02613C1990008321F /* ManagedCache.swift in Sources */,
+				350AF6ED25E0365A0000F698 /* UIImage+Badge.swift in Sources */,
+				00E0FB3626169434005EC90D /* CounterErrorViewModel.swift in Sources */,
+				00DE1D062616459B00BBBD94 /* CountersResult.swift in Sources */,
+				003ABBB02613C5020008321F /* CoreDataCounterStore.swift in Sources */,
+				0082F6D42616735F006C0323 /* CounterCell.swift in Sources */,
+				00DB6AEE261AD7B400B96952 /* CounterLoadingView.swift in Sources */,
+				00DB6ADA261ACF6300B96952 /* AddCounterPresenter+Localized.swift in Sources */,
+				00DB6AF4261AD7E200B96952 /* CountersView.swift in Sources */,
+				DECA257025CC8D4200851431 /* WelcomeViewController.swift in Sources */,
+				0027F824261BAB9800F55430 /* RemoteCounterDeleter.swift in Sources */,
+				00E7B45826137C7400119CCA /* RemoteCounter.swift in Sources */,
+				00E7B4732613AB6D00119CCA /* CounterCache.swift in Sources */,
+				0082F6AB261659B8006C0323 /* CountersPresenter.swift in Sources */,
+				00E0FB2A26169298005EC90D /* MainQueueDispatchDecorator.swift in Sources */,
+				0052EB952617CD5A00FD5D26 /* CountersMapperError+Localized.swift in Sources */,
+				003CFBDE261ABD2C0081C391 /* AddCounterViewController.swift in Sources */,
+				0082F6CE2616719A006C0323 /* CountersRefreshViewController.swift in Sources */,
+				0082F6E426167625006C0323 /* CounterCellController.swift in Sources */,
+				00E7B43926135E0100119CCA /* RemoteCounterLoader.swift in Sources */,
+				0052EB992617CDF400FD5D26 /* ErrorView.swift in Sources */,
+				DECA256C25CC8D4200851431 /* AppDelegate.swift in Sources */,
+				00B3C5FB261BE03200F5F7EE /* CounterListViewController.swift in Sources */,
+				006F5C2F2613E9D300A5E00A /* CounterCreator.swift in Sources */,
+				00DE1D2726164E8E00BBBD94 /* CounterOperator.swift in Sources */,
+				0052EB792617ABF300FD5D26 /* CountersPresenter+Localized.swift in Sources */,
+				DE3EBACC25E048CE00DA1E0D /* Button.swift in Sources */,
+				00E7B40B2612A15300119CCA /* Counter.swift in Sources */,
+				00DB6AFA261AD7FC00B96952 /* CounterErrorView.swift in Sources */,
+				0082F6A026165816006C0323 /* CountersViewController.swift in Sources */,
+				00E7B43526135DB400119CCA /* HTTPClient.swift in Sources */,
+				00E7B4612613A38300119CCA /* CounterStore.swift in Sources */,
+				0052EB5C26177E8F00FD5D26 /* UserDefaults+Welcome.swift in Sources */,
+				00E7B45426137C0500119CCA /* CountersMapper.swift in Sources */,
+				0082F6EE26167C3C006C0323 /* CounterCellPresenter.swift in Sources */,
+				00E7B4932613BE7A00119CCA /* CounterStore.xcdatamodeld in Sources */,
+				00E7B4672613A3D900119CCA /* LocalCounter.swift in Sources */,
+				0027F812261B8FB500F55430 /* CountersBarController.swift in Sources */,
+				35EAFB7925CC9E3B00DCFE10 /* Networking.m in Sources */,
+				350AF6D925E02D5E0000F698 /* WelcomeView.swift in Sources */,
+				0027F81F261BAAE600F55430 /* CounterDeleter.swift in Sources */,
+				003ABBB62613C6540008321F /* CoreDataHelpers.swift in Sources */,
+				00E7B46F2613A6C700119CCA /* LocalCounterLoader.swift in Sources */,
+				00B3C615261C813800F5F7EE /* CountersSearchController.swift in Sources */,
+				00E0FB2E261693A4005EC90D /* CounterLoadingViewModel.swift in Sources */,
+				00E7B46B2613A57100119CCA /* CounterCachePolicy.swift in Sources */,
+				00C0BC7226188D59003876D5 /* Cell+Extension.swift in Sources */,
+				003CFBE2261ABD470081C391 /* AddCounterView.swift in Sources */,
+				00E0FB5026175B26005EC90D /* String+Localizable.swift in Sources */,
+				350AF6E425E035840000F698 /* WelcomeFeatureView.swift in Sources */,
+				00DE1D00261642AB00BBBD94 /* RemoteCounterCreator.swift in Sources */,
+				00DB6AD4261ACE3B00B96952 /* AddCounterPresenter.swift in Sources */,
+				00E7B4132612A1A600119CCA /* CounterLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DECA257A25CC8D4300851431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0027F7F5261B5E8400F55430 /* UIBarButtonItem+TestHelper.swift in Sources */,
+				00E0FAFA2616848B005EC90D /* CountersUIIntegrationTests+LoaderSpy.swift in Sources */,
+				00DE1D1326164B5400BBBD94 /* HTTPClientSpy.swift in Sources */,
+				0027F7FA261B610100F55430 /* UIButton+TestHelper.swift in Sources */,
+				00DE1D0C261648D700BBBD94 /* CreateCountersFromRemoteUseCaseTests.swift in Sources */,
+				003ABBC12613C7C70008321F /* XCTestCase+CounterStoreSpecs.swift in Sources */,
+				00E7B4792613AD3300119CCA /* CacheCountersUseCaseTests.swift in Sources */,
+				00E7B44E26136E9700119CCA /* SharedTestHelpers.swift in Sources */,
+				003ABBBB2613C7080008321F /* CounterStoreSpecs.swift in Sources */,
+				00E0FB5F26175E67005EC90D /* WelcomeUIIntegrationTests.swift in Sources */,
+				00E0FAF52616840F005EC90D /* CountersUIIntegrationTests.swift in Sources */,
+				00E7B44A26136DB500119CCA /* NetworkingHTTPClientTests.swift in Sources */,
+				00E0FB1026168B0E005EC90D /* CountersUIIntegrationTests+Assertions.swift in Sources */,
+				00E7B4192612A21800119CCA /* LoadCountersFromRemoteUseCaseTests.swift in Sources */,
+				00E0FB7A261762C1005EC90D /* WelcomeUIIntegrationTests+Localization.swift in Sources */,
+				0027F82C261BAC0400F55430 /* DeleteCountersFromRemoteUseCaseTests.swift in Sources */,
+				00E0FB0626168798005EC90D /* CountersViewController+TestHelpers.swift in Sources */,
+				00E7B44026135FE500119CCA /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				003ABBC52613D1360008321F /* CoreDataCounterStoreTests.swift in Sources */,
+				00E7B4822613B43A00119CCA /* CounterStoreSpy.swift in Sources */,
+				00E0FB0026168666005EC90D /* UIRefreshControl+TestHelpers.swift in Sources */,
+				0052EB812617AE7100FD5D26 /* CountersUIIntegrationTests+Localization.swift in Sources */,
+				00E7B47D2613B3EF00119CCA /* LoadCountersFromCacheUseCaseTests.swift in Sources */,
+				0052EB872617AEEA00FD5D26 /* Localization+TestHelpers.swift in Sources */,
+				00DE1D1926164BDD00BBBD94 /* RemoteCounterTestHelpers.swift in Sources */,
+				00E7B4882613B80600119CCA /* CounterCacheTestHelpers.swift in Sources */,
+				00E0FB1A26168C4B005EC90D /* CounterCelll+TestHelpers.swift in Sources */,
+				0052EB5826176A7200FD5D26 /* WelcomeFeatureView+TestHelper.swift in Sources */,
+				00E0FB72261760EF005EC90D /* WelcomeViewController+TestHelpers.swift in Sources */,
+				00DE1D4D261653F900BBBD94 /* OperateCountersFromRemoteUseCaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00DB6B07261ADEBF00B96952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DECA256725CC8D4200851431 /* Counters */;
+			targetProxy = 00DB6B06261ADEBF00B96952 /* PBXContainerItemProxy */;
+		};
+		DECA258025CC8D4300851431 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DECA256725CC8D4200851431 /* Counters */;
+			targetProxy = DECA257F25CC8D4300851431 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00E0FB5926175C4E005EC90D /* Welcome.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00E0FB5826175C4E005EC90D /* en */,
+			);
+			name = Welcome.strings;
+			sourceTree = "<group>";
+		};
+		DECA257625CC8D4300851431 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DECA257725CC8D4300851431 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00DB6B09261ADEBF00B96952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C589G3PG8Y;
+				INFOPLIST_FILE = CountersAcceptanceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ortu.caio.CountersAcceptanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Counters.app/Counters";
+			};
+			name = Debug;
+		};
+		00DB6B0A261ADEBF00B96952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C589G3PG8Y;
+				INFOPLIST_FILE = CountersAcceptanceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ortu.caio.CountersAcceptanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Counters.app/Counters";
+			};
+			name = Release;
+		};
+		DECA259025CC8D4300851431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DECA259125CC8D4300851431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DECA259325CC8D4300851431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Counters/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornershop.Counters;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Counters/Config/Counters-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DECA259425CC8D4300851431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Counters/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornershop.Counters;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Counters/Config/Counters-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DECA259625CC8D4300851431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CountersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornershop.CountersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Counters.app/Counters";
+			};
+			name = Debug;
+		};
+		DECA259725CC8D4300851431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CountersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornershop.CountersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Counters.app/Counters";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00DB6B08261ADEBF00B96952 /* Build configuration list for PBXNativeTarget "CountersAcceptanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DB6B09261ADEBF00B96952 /* Debug */,
+				00DB6B0A261ADEBF00B96952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DECA256325CC8D4200851431 /* Build configuration list for PBXProject "Counters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DECA259025CC8D4300851431 /* Debug */,
+				DECA259125CC8D4300851431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DECA259225CC8D4300851431 /* Build configuration list for PBXNativeTarget "Counters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DECA259325CC8D4300851431 /* Debug */,
+				DECA259425CC8D4300851431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DECA259525CC8D4300851431 /* Build configuration list for PBXNativeTarget "CountersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DECA259625CC8D4300851431 /* Debug */,
+				DECA259725CC8D4300851431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00E7B4912613BE7A00119CCA /* CounterStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00E7B4922613BE7A00119CCA /* CounterStore.xcdatamodel */,
+			);
+			currentVersion = 00E7B4922613BE7A00119CCA /* CounterStore.xcdatamodel */;
+			path = CounterStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DECA256025CC8D4200851431 /* Project object */;
+}

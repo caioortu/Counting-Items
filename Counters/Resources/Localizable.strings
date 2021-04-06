@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Counters
+
+  Created by Caio Ortu on 4/2/21.
+  
+*/
+
+"CONNECTIVITY_ERROR_MESSAGE" = "The Internet connection appears to be offline.";
+"EMPTY_RESULT_ERROR_MESSAGE" = "“When I started counting my blessings, my whole life turned around.” —Willie Nelson";

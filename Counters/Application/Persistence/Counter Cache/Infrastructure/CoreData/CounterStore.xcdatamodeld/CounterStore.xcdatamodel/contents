@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ManagedCache" representedClassName="ManagedCache" syncable="YES">
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="counters" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ManagedCounter" inverseName="cache" inverseEntity="ManagedCounter"/>
+    </entity>
+    <entity name="ManagedCounter" representedClassName="ManagedCounter" syncable="YES">
+        <attribute name="count" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <relationship name="cache" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedCache" inverseName="counters" inverseEntity="ManagedCache"/>
+    </entity>
+    <elements>
+        <element name="ManagedCache" positionX="-63" positionY="-18" width="128" height="59"/>
+        <element name="ManagedCounter" positionX="-54" positionY="0" width="128" height="89"/>
+    </elements>
+</model>
